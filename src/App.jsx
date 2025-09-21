@@ -13,7 +13,7 @@ export default function App() {
       <header className="bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/img/logo.png" alt="EcoClean" className="h-8 w-8" />
+            <img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="EcoClean" className="h-8 w-8" />
             <span className="font-semibold">EcoClean</span>
           </div>
           <nav className="flex gap-4 text-sm">
