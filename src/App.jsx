@@ -6,6 +6,10 @@ import Mision from "./pages/Mision";
 import Politicas from "./pages/Politicas";
 import Ubicacion from "./pages/Ubicacion";
 import Usuarios from "./pages/Usuarios";
+import ChatWidget from "./components/ChatWidget";
+import Faq from "./pages/Faq";
+import SocialBar from "./components/SocialBar";
+
 
 export default function App() {
   return (
@@ -24,6 +28,7 @@ export default function App() {
             <Link to="/politicas">Políticas</Link>
             <Link to="/ubicacion">Ubicación</Link>
             <Link to="/usuarios">Usuarios</Link>
+            <Link to="/faq">FAQ</Link>
           </nav>
         </div>
       </header>
@@ -36,18 +41,17 @@ export default function App() {
         <Route path="/politicas" element={<Politicas />} />
         <Route path="/ubicacion" element={<Ubicacion />} />
         <Route path="/usuarios" element={<Usuarios />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
 
       <footer className="border-t mt-10">
         <div className="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-600 flex items-center justify-between">
           <p>© 2025 EcoClean. Todos los derechos reservados.</p>
-          <div className="flex gap-4">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">WhatsApp</a>
-          </div>
+          <SocialBar />
         </div>
       </footer>
+
+      <ChatWidget />
     </HashRouter>
   );
 }
