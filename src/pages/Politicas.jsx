@@ -1,3 +1,5 @@
+import Rating from "../components/Rating";
+
 export default function Politicas() {
     return (
         <section className="max-w-5xl mx-auto p-6">
@@ -27,6 +29,8 @@ export default function Politicas() {
                 Para iniciar un proceso de devolución o solicitar ayuda, por favor contáctanos mediante el formulario
                 o vía WhatsApp.
             </p>
+
+            <Rating label="Califica la claridad de nuestras políticas" />
         </section>
     );
 }

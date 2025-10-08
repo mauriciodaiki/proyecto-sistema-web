@@ -1,3 +1,5 @@
+import Rating from "../components/Rating";
+
 export default function QuienesSomos() {
     return (
         <section className="max-w-5xl mx-auto p-6">
@@ -12,6 +14,7 @@ export default function QuienesSomos() {
                 Creemos en el poder de la limpieza consciente: cuidamos del hogar, cuidamos de las personas y cuidamos
                 del planeta. Cada decisión que tomamos está guiada por el respeto hacia el medio ambiente y la comunidad.
             </p>
+            <Rating label="¿Te fue útil esta página?" />
         </section>
     );
 }

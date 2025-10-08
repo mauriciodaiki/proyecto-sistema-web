@@ -1,3 +1,5 @@
+import ImageSlider from "../components/ImageSlider";
+
 export default function Home() {
     const productos = [
         { img: "/img/detergente1.png", nombre: "Limpiador multiusos", precio: "$85.00 MXN" },
@@ -8,15 +10,10 @@ export default function Home() {
 
     return (
         <main className="max-w-6xl mx-auto px-4 py-8">
-            {/* Slider simple con imágenes existentes */}
-            <section aria-label="Promociones" className="mb-10">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <img src={`${import.meta.env.BASE_URL}img/slide1.jpg`} alt="Producto 1" className="rounded-lg object-cover w-full h-40" />
-                    <img src={`${import.meta.env.BASE_URL}img/slide2.jpg`} alt="Producto 2" className="rounded-lg object-cover w-full h-40" />
-                    <img src={`${import.meta.env.BASE_URL}img/slide3.jpg`} alt="Producto 3" className="rounded-lg object-cover w-full h-40" />
-                    <img src={`${import.meta.env.BASE_URL}img/ecoclean-2.png`} alt="Producto 4" className="rounded-lg object-contain w-full h-40 bg-white" />
-                </div>
-            </section>
+        {/* Slider de imágenes (SPRINT a) */}
+            <section aria-label="Promociones">
+                <ImageSlider />
+                </section>
 
             <h2 className="text-2xl font-bold mb-4">Productos Destacados</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
