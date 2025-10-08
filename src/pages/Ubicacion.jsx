@@ -1,3 +1,5 @@
+import Rating from "../components/Rating";
+
 export default function Ubicacion() {
     return (
         <section className="max-w-5xl mx-auto p-6">
@@ -6,7 +8,7 @@ export default function Ubicacion() {
                 Nos encontramos en Guadalajara, Jalisco. En esta ciudad operamos nuestra planta de producción y
                 distribución, además de atender pedidos en línea a todo México.
             </p>
-            {/* Si después agregan mapa, aquí lo insertan */}
+            <Rating label="¿Te fue útil esta página?" />
         </section>
     );
 }

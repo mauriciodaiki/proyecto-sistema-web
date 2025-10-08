@@ -1,3 +1,5 @@
+import Rating from "../components/Rating";
+
 export default function Vision() {
     return (
         <section className="max-w-5xl mx-auto p-6">
@@ -6,6 +8,7 @@ export default function Vision() {
                 Ser líderes en el mercado nacional de productos de limpieza ecológicos, reconocidos por nuestro
                 compromiso con la innovación, la sostenibilidad y la responsabilidad social.
             </p>
+            <Rating label="¿Te fue útil esta página?" />
         </section>
     );
 }
